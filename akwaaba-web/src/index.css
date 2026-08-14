@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Hanken+Grotesque:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Hanken Grotesque', sans-serif;
+
+  --color-ghana-red: #CE1126;
+  --color-ghana-gold: #F2B705;
+  --color-ghana-green: #006B3F;
+  --color-ghana-green-deep: #00532f;
+  --color-ink: #16140F;
+
+  --color-base: #111827;
+  --color-surface: #1F3D37;
+  --color-surface-deep: #0B1220;
+  --color-surface-raised: #2A4B43;
+
+  --color-hairline: rgba(255,255,255,.10);
+  --color-hairline-strong: rgba(255,255,255,.16);
+
+  --color-text-1: #FFFFFF;
+  --color-text-2: #E2E8F0;
+  --color-text-3: #CBD5E1;
+  --color-text-4: #97A9BC;
+  --color-text-5: #82998F;
+  --color-text-6: #6B7F8C;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: linear-gradient(165deg, var(--color-base) 0%, #16241f 55%, var(--color-surface) 130%) fixed;
+  color: var(--color-text-3);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  background: var(--color-ghana-green);
+  color: #fff;
+}
+
+.placeholder-media {
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.08) 0 9px, rgba(255,255,255,.03) 9px 18px);
+}
+
+.placeholder-media-map {
+  background-image: repeating-linear-gradient(45deg, rgba(0,107,63,.28) 0 9px, rgba(0,107,63,.14) 9px 18px);
+}
+
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee-left 42s linear infinite;
+}
+
+.marquee-track:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}

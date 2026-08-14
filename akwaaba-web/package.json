@@ -1,0 +1,35 @@
+{
+  "name": "akwaaba-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:all": "concurrently -n web,api -c blue,green \"npm run dev\" \"npm run server:dev\"",
+    "server:install": "npm install --prefix server",
+    "server:dev": "node --watch server/index.js",
+    "server": "node server/index.js",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "autoprefixer": "^10.5.4",
+    "concurrently": "^10.0.4",
+    "oxlint": "^1.71.0",
+    "postcss": "^8.5.22",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  }
+}
