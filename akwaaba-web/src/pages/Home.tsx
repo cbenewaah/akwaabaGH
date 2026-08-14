@@ -97,18 +97,18 @@ export function Home() {
       </section>
 
       {/* Browse by region */}
-      <section className="py-7">
+      <section className="py-9 sm:py-10">
         <div className="mx-auto max-w-[1400px] px-5 lg:px-8">
-          <h2 className="font-display text-xl font-bold text-white mb-3.5">{t('browse_region')}</h2>
+          <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-white mb-5">{t('browse_region')}</h2>
         </div>
         <RegionMarquee regions={regions} regionImages={regionImages} />
       </section>
 
       {/* Featured destinations */}
-      <section className="mx-auto max-w-[1400px] px-5 lg:px-8 py-6">
-        <div className="flex items-center justify-between mb-3.5">
-          <h2 className="font-display text-xl font-bold text-white">{t('featured_destinations')}</h2>
-          <Link to="/destinations" className="text-sm font-semibold text-ghana-green hover:underline">
+      <section className="mx-auto max-w-[1400px] px-5 lg:px-8 py-8 sm:py-10">
+        <div className="flex items-end justify-between mb-5">
+          <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-white">{t('featured_destinations')}</h2>
+          <Link to="/destinations" className="text-sm font-semibold text-ghana-green hover:underline shrink-0">
             {t('view_all')} →
           </Link>
         </div>

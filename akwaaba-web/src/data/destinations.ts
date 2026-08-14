@@ -36,6 +36,10 @@ import anomaboImg from '../assets/images/anomabo-beach.jpg'
 import goasoImg from '../assets/images/goaso-forest-reserve.jpg'
 import boabengFiemaImg from '../assets/images/boabeng-fiema-sanctuary.jpg'
 import yendiImg from '../assets/images/yendi-dagbon.jpg'
+import lakeBosomtweImg from '../assets/images/lake-bosomtwe.jpg'
+import wliWaterfallsImg from '../assets/images/wli-waterfalls.jpg'
+import amedzofeImg from '../assets/images/amedzofe.jpg'
+import amedzofeVillageImg from '../assets/images/amedzofe-village.jpg'
 
 export const destinations: Destination[] = [
   // ---------- Greater Accra ----------
@@ -157,6 +161,7 @@ export const destinations: Destination[] = [
     goodFor: 'Swimming · boats · families',
     address: '35 km SE of Kumasi',
     mapQuery: 'Lake Bosomtwe Ghana',
+    image: lakeBosomtweImg,
     featured: false,
     nearby: ['manhyia-palace'],
   },
@@ -218,6 +223,7 @@ export const destinations: Destination[] = [
     goodFor: 'Hiking · swimming · nature lovers',
     address: 'Agumatsa Wildlife Sanctuary, Volta',
     mapQuery: 'Wli Waterfalls Volta Region Ghana',
+    image: wliWaterfallsImg,
     featured: true,
     nearby: ['tafi-atome', 'mount-afadjato', 'amedzofe'],
   },
@@ -277,6 +283,8 @@ export const destinations: Destination[] = [
     goodFor: 'Hiking · views · slow travel',
     address: 'Amedzofe, Volta',
     mapQuery: 'Amedzofe Ghana',
+    image: amedzofeImg,
+    secondaryImage: amedzofeVillageImg,
     featured: false,
     nearby: ['mount-afadjato', 'tafi-atome'],
   },

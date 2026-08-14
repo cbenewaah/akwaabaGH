@@ -40,6 +40,7 @@ export interface Destination {
   address: string
   mapQuery: string
   image?: string
+  secondaryImage?: string
   featured?: boolean
   nearby: string[]
 }
@@ -75,4 +76,5 @@ export interface Review {
   text: string
   likes: number
   time: string
+  media?: { type: 'image' | 'video'; url: string }
 }

@@ -32,19 +32,18 @@ export function DestinationDetail() {
       </div>
 
       {/* gallery */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 grid-rows-2 gap-2 h-[240px] sm:h-[260px]">
+      <div className="grid grid-cols-2 gap-2 h-[240px] sm:h-[300px]">
         <PlaceholderMedia
           label="photo · main"
           image={destination.image}
           alt={destination.name}
-          className="col-span-2 row-span-2 rounded-l-xl sm:rounded-l-2xl"
+          className="rounded-l-xl sm:rounded-l-2xl"
         />
-        <PlaceholderMedia className="hidden sm:flex" />
-        <PlaceholderMedia className="hidden sm:flex rounded-tr-2xl" />
-        <PlaceholderMedia className="col-span-2 sm:col-span-1" />
-        <PlaceholderMedia className="col-span-2 sm:col-span-1 rounded-br-xl sm:rounded-br-2xl text-sm font-semibold text-text-4">
-          + 12 photos
-        </PlaceholderMedia>
+        <PlaceholderMedia
+          image={destination.secondaryImage}
+          alt={destination.secondaryImage ? `${destination.name} — second photo` : undefined}
+          className="rounded-r-xl sm:rounded-r-2xl"
+        />
       </div>
 
       {/* title row */}
