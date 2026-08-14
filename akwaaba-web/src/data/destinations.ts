@@ -37,6 +37,7 @@ import goasoImg from '../assets/images/goaso-forest-reserve.jpg'
 import boabengFiemaImg from '../assets/images/boabeng-fiema-sanctuary.jpg'
 import yendiImg from '../assets/images/yendi-dagbon.jpg'
 import lakeBosomtweImg from '../assets/images/lake-bosomtwe.jpg'
+import lakeBosomtweCanoesImg from '../assets/images/lake-bosomtwe-canoes.jpg'
 import wliWaterfallsImg from '../assets/images/wli-waterfalls.jpg'
 import amedzofeImg from '../assets/images/amedzofe.jpg'
 import amedzofeVillageImg from '../assets/images/amedzofe-village.jpg'
@@ -162,6 +163,7 @@ export const destinations: Destination[] = [
     address: '35 km SE of Kumasi',
     mapQuery: 'Lake Bosomtwe Ghana',
     image: lakeBosomtweImg,
+    secondaryImage: lakeBosomtweCanoesImg,
     featured: false,
     nearby: ['manhyia-palace'],
   },
